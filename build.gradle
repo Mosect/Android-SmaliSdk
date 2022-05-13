@@ -1,0 +1,21 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+ext {
+    pluginVersion = '1.1.0-b1'
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
